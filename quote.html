@@ -1,1 +1,36 @@
-<!-- Quote Form Page HTML -->
+form action="/submit-quote" method="POST">
+  <label>Name:</label>
+  <input type="text" name="name" required><br>
+
+  <label>Email:</label>
+  <input type="email" name="email" required><br>
+
+  <label>Phone:</label>
+  <input type="tel" name="phone"><br>
+
+  <label>Move From Address:</label>
+  <input type="text" name="from_address" required><br>
+
+  <label>Move To Address:</label>
+  <input type="text" name="to_address" required><br>
+
+  <label>Moving Date:</label>
+  <input type="date" name="move_date" required><br>
+
+  <label>Size of Move:</label>
+  <select name="size">
+    <option value="1-room">1 Room</option>
+    <option value="2-room">2 Rooms</option>
+    <option value="3-room">3 Rooms</option>
+    <option value="house">Entire House</option>
+  </select><br>
+
+  <label>Extra Services:</label><br>
+  <input type="checkbox" name="services" value="packing"> Packing<br>
+  <input type="checkbox" name="services" value="storage"> Storage<br>
+
+  <label>Message:</label><br>
+  <textarea name="message" rows="4" cols="50"></textarea><br>
+
+  <input type="submit" value="Get Quote">
+</form>
